@@ -1,0 +1,3 @@
+topologia: 25 capas
+razonAprendizaje: 0.1
+ciclosMaximos: 4000
