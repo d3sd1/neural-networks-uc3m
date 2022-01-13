@@ -1,0 +1,67 @@
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ batch_normalization (BatchN  (None, 32, 32, 3)        12        
+ ormalization)                                                   
+                                                                 
+ Input_layer (Flatten)       (None, 3072)              0         
+                                                                 
+ Hidden_layer_1 (Dense)      (None, 25)                76825     
+                                                                 
+ dropout (Dropout)           (None, 25)                0         
+                                                                 
+ Hidden_layer_2 (Dense)      (None, 25)                650       
+                                                                 
+ dropout_1 (Dropout)         (None, 25)                0         
+                                                                 
+ Output_layer (Dense)        (None, 10)                260       
+                                                                 
+=================================================================
+Total params: 77,747
+Trainable params: 77,741
+Non-trainable params: 6
+_________________________________________________________________
+Epoch 1/10
+1563/1563 [==============================] - 6s 4ms/step - loss: 2.0450 - sparse_categorical_accuracy: 0.2385 - val_loss: 1.8932 - val_sparse_categorical_accuracy: 0.3384
+Epoch 2/10
+1563/1563 [==============================] - 6s 4ms/step - loss: 1.9460 - sparse_categorical_accuracy: 0.2908 - val_loss: 1.8440 - val_sparse_categorical_accuracy: 0.3482
+Epoch 3/10
+1563/1563 [==============================] - 6s 4ms/step - loss: 1.9053 - sparse_categorical_accuracy: 0.3077 - val_loss: 1.8002 - val_sparse_categorical_accuracy: 0.3637
+Epoch 4/10
+1563/1563 [==============================] - 6s 4ms/step - loss: 1.8841 - sparse_categorical_accuracy: 0.3144 - val_loss: 1.7813 - val_sparse_categorical_accuracy: 0.3715
+Epoch 5/10
+1563/1563 [==============================] - 6s 4ms/step - loss: 1.8630 - sparse_categorical_accuracy: 0.3223 - val_loss: 1.7576 - val_sparse_categorical_accuracy: 0.3748
+Epoch 6/10
+1563/1563 [==============================] - 6s 4ms/step - loss: 1.8460 - sparse_categorical_accuracy: 0.3312 - val_loss: 1.7468 - val_sparse_categorical_accuracy: 0.3795
+Epoch 7/10
+1563/1563 [==============================] - 6s 4ms/step - loss: 1.8378 - sparse_categorical_accuracy: 0.3359 - val_loss: 1.7336 - val_sparse_categorical_accuracy: 0.3834
+Epoch 8/10
+1563/1563 [==============================] - 6s 4ms/step - loss: 1.8263 - sparse_categorical_accuracy: 0.3396 - val_loss: 1.7163 - val_sparse_categorical_accuracy: 0.3911
+Epoch 9/10
+1563/1563 [==============================] - 6s 4ms/step - loss: 1.8191 - sparse_categorical_accuracy: 0.3440 - val_loss: 1.7244 - val_sparse_categorical_accuracy: 0.3844
+Epoch 10/10
+1563/1563 [==============================] - 6s 4ms/step - loss: 1.8069 - sparse_categorical_accuracy: 0.3455 - val_loss: 1.7070 - val_sparse_categorical_accuracy: 0.3896
+313/313 [==============================] - 0s 1ms/step - loss: 1.7070 - sparse_categorical_accuracy: 0.3896
+[[0.02526622 0.03170359 0.06259902 0.279251   0.05153231 0.2951126
+  0.16151935 0.04116301 0.03056273 0.02129016]
+ [0.07044469 0.32285297 0.00694966 0.01479025 0.0048675  0.0075858
+  0.00402581 0.00725625 0.28277043 0.27845663]
+ [0.23696977 0.03065404 0.02508247 0.01825552 0.00944335 0.01623919
+  0.00303603 0.00584609 0.6144799  0.03999362]
+ [0.3704505  0.05797747 0.06388348 0.02519478 0.0356463  0.02190004
+  0.00392594 0.0371221  0.31111374 0.07278559]
+ [0.02202504 0.01192635 0.20748658 0.0795448  0.2823354  0.10758734
+  0.14785759 0.12674615 0.00554402 0.00894682]]
+[5 1 8 0 4 6 3 6 5 1 8 9 3 1 9 0 5 7 8 6]
+[3 8 8 0 6 6 1 6 3 1 0 9 5 7 9 8 5 7 8 6]
+[[510  72  28  24  32  21  27  48 204  34]
+ [ 46 596   8  28  23  24  48  41  76 110]
+ [167  36  63  59 268  85 196  90  21  15]
+ [ 46  74  46 127  78 263 234  74  24  34]
+ [ 73  27  45  27 380  76 210 126  21  15]
+ [ 36  52  35  91 117 360 162  92  43  12]
+ [ 16  38  28  77 141 101 560  20   7  12]
+ [ 63  58  16  40 168  82  69 421  27  56]
+ [173 133   4  29  11  52   8  17 515  58]
+ [ 68 289   4  35   6  18  51  46 119 364]]

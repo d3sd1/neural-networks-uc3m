@@ -1,0 +1,3 @@
+num capas ocultas => 2
+num neuronas por capa oculta => 25
+num epocas/iteraciones => 10

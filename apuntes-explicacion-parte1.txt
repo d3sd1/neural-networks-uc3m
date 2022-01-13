@@ -1,0 +1,25 @@
+CODIFICACION clases:
+traducir etiquetas a binario
+
+		bus	opel	saab	van
+saab 	-->	0	0	1	0
+bus 	-->	1	0	0	0
+opel	-->	0	1	0	0
+van 	-->	0	0	0	1
+
+la codificacion ya esta en el script que nos dan
+
+
+
+el propio algoritmo busca el mejor modelo y a ese es al que le aplicamos el test
+
+
+
+METODOLOGIA PRACTICA:
+
+ - 1/3 test, 2/3 entrenamiento
+ - Entregar ambos ficheros normalizados, hay que hacer el script
+ - Test no se toca hasta el final
+ - Una funcion entrena directamente el entrenamiento, y hace un split para dejar un 20% para validacion
+ - Nos da el accuracy y el mse (error cuadratico medio)
+

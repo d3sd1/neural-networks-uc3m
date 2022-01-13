@@ -1,0 +1,5 @@
+- Capas convolucionales: 2
+- Filtros en capas convolucionales: 16, 32
+- Kernel en capas convolucionales: (3,3), (3,3)
+- Capas "Fully Connected": 2
+- Tamaño capas "Fully Connected": 32, 16
